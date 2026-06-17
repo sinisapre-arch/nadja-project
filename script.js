@@ -166,6 +166,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Keyboard navigation
   document.addEventListener('keydown', e => {
+    // PDF modal takes priority when open
+    if (pdfModal && pdfModal.classList.contains('active')) {
+      if (e.key === 'Escape') closePdf();
+      return;
+    }
     if (!lightbox.classList.contains('active')) return;
     if (e.key === 'Escape')      closeLightbox();
     if (e.key === 'ArrowLeft')   prevImage();
@@ -181,6 +186,45 @@ document.addEventListener('DOMContentLoaded', () => {
       diff > 0 ? nextImage() : prevImage();
     }
   });
+
+
+  /* ══════════════════════════════════════════
+     PDF VIEWER MODAL
+  ══════════════════════════════════════════ */
+  const pdfModal         = document.getElementById('pdfModal');
+  const pdfModalBackdrop = document.getElementById('pdfModalBackdrop');
+  const pdfFrame         = document.getElementById('pdfFrame');
+  const pdfModalClose    = document.getElementById('pdfModalClose');
+  const pdfCard          = document.getElementById('phase1PdfCard');
+
+  // URL-encode the path so the browser serves it with the built-in viewer
+  // (toolbar params enable pan/zoom via the native PDF UI).
+  const PDF_SRC = 'Phase%20One/Civil3D%20PDF%20siteplan%20Further%20comments.pdf#view=FitH';
+
+  function openPdf() {
+    pdfFrame.src = PDF_SRC;
+    pdfModal.classList.add('active');
+    pdfModalBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePdf() {
+    pdfModal.classList.remove('active');
+    pdfModalBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+    // Clear src to stop the PDF from rendering in the background
+    pdfFrame.src = '';
+  }
+
+  if (pdfCard) {
+    pdfCard.addEventListener('click', openPdf);
+    pdfCard.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPdf(); }
+    });
+  }
+
+  pdfModalClose.addEventListener('click', closePdf);
+  pdfModalBackdrop.addEventListener('click', closePdf);
 
   /* ══════════════════════════════════════════
      PARALLAX — HERO BG (subtle)

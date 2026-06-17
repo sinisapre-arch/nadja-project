@@ -16,12 +16,13 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <img src="LOGO.png" alt="MSCW Bureau" class="logo-img" />
+        <img src="LOGO_transparent.png" alt="MSCW Bureau" class="logo-img" />
       </a>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="#concept" data-ru="Концепция" data-en="Concept">Концепция</a></li>
           <li><a href="#gallery" data-ru="Галерея" data-en="Gallery">Галерея</a></li>
+          <li><a href="#phase1" data-ru="Фаза 1" data-en="Phase 1">Фаза 1</a></li>
           <li><a href="#drawings" data-ru="Чертежи" data-en="Drawings">Чертежи</a></li>
           <li><a href="#deliverables" data-ru="Результат" data-en="Deliverables">Результат</a></li>
         </ul>
@@ -173,10 +174,150 @@
   </div>
   <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
 
+  <!-- ═══════════════════════ DESIGN PHASE 1 ═══════════════════════ -->
+  <section class="section phase1-section" id="phase1">
+    <div class="container">
+      <div class="section-tag" data-ru="03 — Дизайн · Фаза 1" data-en="03 — Design · Phase 1">03 — Дизайн · Фаза 1</div>
+      <h2 class="section-title" data-ru="Фаза дизайна 1 — Ландшафтный проект" data-en="Design Phase 1 — Landscape Project">Фаза дизайна 1 — Ландшафтный проект</h2>
+      <p class="section-subtitle" data-ru="Ниже представлены предварительные 3D-визуализации для проекта благоустройства. Основным источником информации является PDF-документ с генеральным планом участка — нажмите на обложку, чтобы открыть его полностью с возможностью прокрутки и увеличения. Остальные изображения служат для наглядной 3D-визуализации." data-en="Below are preliminary 3D visualisations for the landscaping project. The primary source of information is the PDF document containing the master site plan — click the cover to open it in full with pan and zoom. The remaining images are for 3D visualisation purposes.">Ниже представлены предварительные 3D-визуализации для проекта благоустройства. Основным источником информации является PDF-документ с генеральным планом участка — нажмите на обложку, чтобы открыть его полностью с возможностью прокрутки и увеличения. Остальные изображения служат для наглядной 3D-визуализации.</p>
+
+      <!-- PDF — primary source -->
+      <div class="phase1-pdf-card" id="phase1PdfCard" role="button" tabindex="0" aria-label="Open PDF document">
+        <div class="phase1-pdf-thumb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+          <span class="phase1-pdf-badge">PDF</span>
+        </div>
+        <div class="phase1-pdf-info">
+          <div class="phase1-pdf-label" data-ru="Основной документ" data-en="Primary Document">Основной документ</div>
+          <h3 class="phase1-pdf-title" data-ru="Генеральный план участка — Civil3D (с комментариями)" data-en="Master Site Plan — Civil3D (with comments)">Генеральный план участка — Civil3D (с комментариями)</h3>
+          <p class="phase1-pdf-desc" data-ru="Нажмите, чтобы открыть полный PDF-документ. Вы сможете листать страницы, увеличивать масштаб и просматривать план целиком." data-en="Click to open the full PDF document. You can scroll through pages, zoom in, and view the complete plan.">Нажмите, чтобы открыть полный PDF-документ. Вы сможете листать страницы, увеличивать масштаб и просматривать план целиком.</p>
+          <span class="phase1-pdf-open" data-ru="Открыть PDF →" data-en="Open PDF →">Открыть PDF →</span>
+        </div>
+      </div>
+
+      <!-- Vegetation disclaimer -->
+      <div class="disclaimer-card phase1-disclaimer">
+        <div class="disclaimer-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        </div>
+        <div class="disclaimer-text">
+          <h3 class="disclaimer-heading" data-ru="О растительности и посадках" data-en="Regarding Vegetation & Planting">О растительности и посадках</h3>
+          <p data-ru="Вся растительность и растения на визуализациях представлены <strong>исключительно для наглядности</strong>. Они не являются посадочной ведомостью и не определяют финальный ассортимент растений, их количество или расположение." data-en="All vegetation and plants shown in the visualisations are <strong>for visual purposes only</strong>. They do not constitute a planting schedule, nor do they represent the final plant species, quantities, or placement.">Вся растительность и растения на визуализациях представлены <strong>исключительно для наглядности</strong>. Они не являются посадочной ведомостью и не определяют финальный ассортимент растений, их количество или расположение.</p>
+        </div>
+      </div>
+
+      <h3 class="phase1-subhead" data-ru="3D-визуализации" data-en="3D Visualisations">3D-визуализации</h3>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--wide" data-index="4">
+          <div class="gallery-img-wrap">
+            <img src="Phase One/Pres_1_TopDown.png" alt="Phase 1 — Top-down site view" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-num">05</span>
+            <div>
+              <h4 data-ru="Общий вид сверху" data-en="Overall Top-Down View">Общий вид сверху</h4>
+              <p data-ru="Обзорная визуализация всего участка" data-en="Overview visualisation of the entire site">Обзорная визуализация всего участка</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="5">
+          <div class="gallery-img-wrap">
+            <img src="Phase One/Pres_1_Driveway.png" alt="Phase 1 — Driveway view" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-num">06</span>
+            <div>
+              <h4 data-ru="Въездная зона — вид 1" data-en="Driveway — View 1">Въездная зона — вид 1</h4>
+              <p data-ru="Концепция подъездной дороги" data-en="Driveway concept">Концепция подъездной дороги</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="6">
+          <div class="gallery-img-wrap">
+            <img src="Phase One/Pres_1_Driveway2.png" alt="Phase 1 — Driveway alternate view" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-num">07</span>
+            <div>
+              <h4 data-ru="Въездная зона — вид 2" data-en="Driveway — View 2">Въездная зона — вид 2</h4>
+              <p data-ru="Альтернативный ракурс въездной зоны" data-en="Alternate angle of the driveway zone">Альтернативный ракурс въездной зоны</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="7">
+          <div class="gallery-img-wrap">
+            <img src="Phase One/Pres_1_ParkingArea.png" alt="Phase 1 — Parking area view" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-num">08</span>
+            <div>
+              <h4 data-ru="Парковочная зона — вид 1" data-en="Parking Area — View 1">Парковочная зона — вид 1</h4>
+              <p data-ru="Концепция зоны парковки" data-en="Parking zone concept">Концепция зоны парковки</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-item--wide" data-index="8">
+          <div class="gallery-img-wrap">
+            <img src="Phase One/Pres_1_ParkingArea2.png" alt="Phase 1 — Parking area alternate view" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-num">09</span>
+            <div>
+              <h4 data-ru="Парковочная зона — вид 2" data-en="Parking Area — View 2">Парковочная зона — вид 2</h4>
+              <p data-ru="Альтернативный ракурс парковочной зоны" data-en="Alternate angle of the parking zone">Альтернативный ракурс парковочной зоны</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PDF VIEWER MODAL ═══════════════════════ -->
+  <div class="pdf-modal" id="pdfModal" role="dialog" aria-modal="true" aria-label="PDF viewer">
+    <button class="pdf-modal-close" id="pdfModalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="pdf-modal-frame">
+      <iframe id="pdfFrame" title="PDF document" src=""></iframe>
+    </div>
+    <div class="pdf-modal-hint" data-ru="Используйте элементы управления для прокрутки и увеличения" data-en="Use the controls to pan and zoom"></div>
+  </div>
+  <div class="pdf-modal-backdrop" id="pdfModalBackdrop"></div>
+
   <!-- ═══════════════════════ DRAWINGS NEEDED ═══════════════════════ -->
   <section class="section drawings-section" id="drawings">
     <div class="container">
-      <div class="section-tag" data-ru="03 — Документация" data-en="03 — Documentation">03 — Документация</div>
+      <div class="section-tag" data-ru="04 — Документация" data-en="04 — Documentation">04 — Документация</div>
       <h2 class="section-title" data-ru="Необходимые чертежи" data-en="Required Drawings">Необходимые чертежи</h2>
       <p class="section-subtitle" data-ru="Для создания точного 3D-макета и проектной документации мне необходимо несколько технических материалов. Ниже — подробный список с пояснениями. Не беспокойтесь, если что-то из этого звучит незнакомо — я всё объясню." data-en="To create an accurate 3D model and project documentation, I need several technical documents. Below is a detailed list with explanations. Don't worry if any of this sounds unfamiliar — I'll explain everything.">Для создания точного 3D-макета и проектной документации мне необходимо несколько технических материалов. Ниже — подробный список с пояснениями. Не беспокойтесь, если что-то из этого звучит незнакомо — я всё объясню.</p>
 
@@ -268,7 +409,7 @@
   <!-- ═══════════════════════ DELIVERABLES ═══════════════════════ -->
   <section class="section deliverables-section" id="deliverables">
     <div class="container">
-      <div class="section-tag" data-ru="04 — Результат работы" data-en="04 — Project Deliverables">04 — Результат работы</div>
+      <div class="section-tag" data-ru="05 — Результат работы" data-en="05 — Project Deliverables">05 — Результат работы</div>
       <h2 class="section-title" data-ru="Что вы получите" data-en="What You Will Receive">Что вы получите</h2>
       <p class="section-subtitle" data-ru="После предоставления всех необходимых материалов я приступлю к разработке полного ландшафтного проекта. Вот что будет входить в финальный пакет документов:" data-en="Once all required documents are provided, I will begin developing the full landscape project. Here is what the final package will include:">После предоставления всех необходимых материалов я приступлю к разработке полного ландшафтного проекта. Вот что будет входить в финальный пакет документов:</p>
 
@@ -331,7 +472,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="LOGO.png" alt="MSCW Bureau" />
+          <img src="LOGO_transparent.png" alt="MSCW Bureau" />
           <p data-ru="Ландшафтный дизайн &amp; благоустройство" data-en="Landscape Design &amp; Development">Ландшафтный дизайн &amp; благоустройство</p>
         </div>
         <div class="footer-note">
