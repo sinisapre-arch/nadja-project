@@ -189,20 +189,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ══════════════════════════════════════════
-     PDF VIEWER MODAL
+     PDF VIEWER MODAL  (supports any number of PDFs via [data-pdf])
   ══════════════════════════════════════════ */
   const pdfModal         = document.getElementById('pdfModal');
   const pdfModalBackdrop = document.getElementById('pdfModalBackdrop');
   const pdfFrame         = document.getElementById('pdfFrame');
   const pdfModalClose    = document.getElementById('pdfModalClose');
-  const pdfCard          = document.getElementById('phase1PdfCard');
 
-  // URL-encode the path so the browser serves it with the built-in viewer
-  // (toolbar params enable pan/zoom via the native PDF UI).
-  const PDF_SRC = 'Phase%20One/Civil3D%20PDF%20siteplan%20Further%20comments.pdf#view=FitH';
-
-  function openPdf() {
-    pdfFrame.src = PDF_SRC;
+  // Any element with data-pdf="relative/path.pdf" opens that PDF.
+  function openPdf(src) {
+    // #view=FitH tells the built-in viewer to fit the page width,
+    // giving consistent pan/zoom behaviour across browsers.
+    pdfFrame.src = encodeURI(src) + '#view=FitH';
     pdfModal.classList.add('active');
     pdfModalBackdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -216,12 +214,12 @@ document.addEventListener('DOMContentLoaded', () => {
     pdfFrame.src = '';
   }
 
-  if (pdfCard) {
-    pdfCard.addEventListener('click', openPdf);
-    pdfCard.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPdf(); }
+  document.querySelectorAll('[data-pdf]').forEach(el => {
+    el.addEventListener('click', () => openPdf(el.dataset.pdf));
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPdf(el.dataset.pdf); }
     });
-  }
+  });
 
   pdfModalClose.addEventListener('click', closePdf);
   pdfModalBackdrop.addEventListener('click', closePdf);

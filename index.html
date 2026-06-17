@@ -182,19 +182,47 @@
     <div class="container">
       <div class="section-tag" data-ru="03 — Дизайн · Фаза 1" data-en="03 — Design · Phase 1">03 — Дизайн · Фаза 1</div>
       <h2 class="section-title" data-ru="Фаза дизайна 1 — Ландшафтный проект" data-en="Design Phase 1 — Landscape Project">Фаза дизайна 1 — Ландшафтный проект</h2>
-      <p class="section-subtitle" data-ru="Ниже представлены предварительные 3D-визуализации для проекта благоустройства. Основным источником информации является PDF-документ с генеральным планом участка — нажмите на обложку, чтобы открыть его полностью с возможностью прокрутки и увеличения. Остальные изображения служат для наглядной 3D-визуализации." data-en="Below are preliminary 3D visualisations for the landscaping project. The primary source of information is the PDF document containing the master site plan — click the cover to open it in full with pan and zoom. The remaining images are for 3D visualisation purposes.">Ниже представлены предварительные 3D-визуализации для проекта благоустройства. Основным источником информации является PDF-документ с генеральным планом участка — нажмите на обложку, чтобы открыть его полностью с возможностью прокрутки и увеличения. Остальные изображения служат для наглядной 3D-визуализации.</p>
+      <p class="section-subtitle" data-ru="Ниже представлены предварительные 3D-визуализации для проекта благоустройства и подробные пояснения по каждому аспекту проекта. Основные документы (PDF) содержат генеральный план, размеры и обоснование проектных решений — нажмите на любую обложку, чтобы открыть документ с возможностью прокрутки и увеличения." data-en="Below are preliminary 3D visualisations for the landscaping project, followed by detailed explanations of each aspect. The key documents (PDF) contain the master plan, dimensions, and design rationale — click any cover to open the document with pan and zoom.">Ниже представлены предварительные 3D-визуализации для проекта благоустройства и подробные пояснения по каждому аспекту проекта. Основные документы (PDF) содержат генеральный план, размеры и обоснование проектных решений — нажмите на любую обложку, чтобы открыть документ с возможностью прокрутки и увеличения.</p>
 
-      <!-- PDF — primary source -->
-      <div class="phase1-pdf-card" id="phase1PdfCard" role="button" tabindex="0" aria-label="Open PDF document">
-        <div class="phase1-pdf-thumb">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
-          <span class="phase1-pdf-badge">PDF</span>
+      <!-- PDF cards — three source documents -->
+      <div class="phase1-pdf-grid">
+        <div class="phase1-pdf-card" data-pdf="Phase One/Civil3D PDF siteplan Further comments.pdf" role="button" tabindex="0" aria-label="Open Master Site Plan PDF">
+          <div class="phase1-pdf-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+            <span class="phase1-pdf-badge">PDF</span>
+          </div>
+          <div class="phase1-pdf-info">
+            <div class="phase1-pdf-label" data-ru="01 · Генплан" data-en="01 · Master Plan">01 · Генплан</div>
+            <h3 class="phase1-pdf-title" data-ru="Генеральный план участка — Civil3D" data-en="Master Site Plan — Civil3D">Генеральный план участка — Civil3D</h3>
+            <p class="phase1-pdf-desc" data-ru="План участка с проектными комментариями и обозначением зон." data-en="Site plan with design comments and zone markings.">План участка с проектными комментариями и обозначением зон.</p>
+            <span class="phase1-pdf-open" data-ru="Открыть PDF →" data-en="Open PDF →">Открыть PDF →</span>
+          </div>
         </div>
-        <div class="phase1-pdf-info">
-          <div class="phase1-pdf-label" data-ru="Основной документ" data-en="Primary Document">Основной документ</div>
-          <h3 class="phase1-pdf-title" data-ru="Генеральный план участка — Civil3D (с комментариями)" data-en="Master Site Plan — Civil3D (with comments)">Генеральный план участка — Civil3D (с комментариями)</h3>
-          <p class="phase1-pdf-desc" data-ru="Нажмите, чтобы открыть полный PDF-документ. Вы сможете листать страницы, увеличивать масштаб и просматривать план целиком." data-en="Click to open the full PDF document. You can scroll through pages, zoom in, and view the complete plan.">Нажмите, чтобы открыть полный PDF-документ. Вы сможете листать страницы, увеличивать масштаб и просматривать план целиком.</p>
-          <span class="phase1-pdf-open" data-ru="Открыть PDF →" data-en="Open PDF →">Открыть PDF →</span>
+
+        <div class="phase1-pdf-card" data-pdf="Phase One/PDF2.0_Dimensions.pdf" role="button" tabindex="0" aria-label="Open Dimensions PDF">
+          <div class="phase1-pdf-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+            <span class="phase1-pdf-badge">PDF</span>
+          </div>
+          <div class="phase1-pdf-info">
+            <div class="phase1-pdf-label" data-ru="02 · Размеры" data-en="02 · Dimensions">02 · Размеры</div>
+            <h3 class="phase1-pdf-title" data-ru="Предварительные размеры" data-en="Preliminary Dimensions">Предварительные размеры</h3>
+            <p class="phase1-pdf-desc" data-ru="Подробные размеры подъездной дороги, парковки и зон озеленения." data-en="Detailed dimensions of the driveway, parking, and landscaping zones.">Подробные размеры подъездной дороги, парковки и зон озеленения.</p>
+            <span class="phase1-pdf-open" data-ru="Открыть PDF →" data-en="Open PDF →">Открыть PDF →</span>
+          </div>
+        </div>
+
+        <div class="phase1-pdf-card" data-pdf="Phase One/PDF3.0_Design Choices.pdf" role="button" tabindex="0" aria-label="Open Design Choices PDF">
+          <div class="phase1-pdf-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+            <span class="phase1-pdf-badge">PDF</span>
+          </div>
+          <div class="phase1-pdf-info">
+            <div class="phase1-pdf-label" data-ru="03 · Решения" data-en="03 · Design Choices">03 · Решения</div>
+            <h3 class="phase1-pdf-title" data-ru="Обоснование проектных решений" data-en="Design Rationale">Обоснование проектных решений</h3>
+            <p class="phase1-pdf-desc" data-ru="Подробное описание принятых решений по материалам, бордюрам, дренажу и растениям." data-en="Detailed explanation of decisions on materials, edging, drainage, and plants.">Подробное описание принятых решений по материалам, бордюрам, дренажу и растениям.</p>
+            <span class="phase1-pdf-open" data-ru="Открыть PDF →" data-en="Open PDF →">Открыть PDF →</span>
+          </div>
         </div>
       </div>
 
@@ -284,6 +312,124 @@
           </div>
         </div>
       </div>
+
+      <!-- ════ DETAILED PROJECT NOTES (below images) ════ -->
+      <h3 class="phase1-subhead" data-ru="Подробные пояснения к проекту" data-en="Detailed Project Notes">Подробные пояснения к проекту</h3>
+
+      <!-- ── BLOCK 1 · Gate Location & Driveway Area (Civil3D PDF) ── -->
+      <article class="details-block">
+        <header class="details-head">
+          <span class="details-num">01</span>
+          <div>
+            <h4 class="details-title" data-ru="Расположение ворот и площадь подъездной дороги" data-en="Gate Location &amp; Driveway Area">Расположение ворот и площадь подъездной дороги</h4>
+            <p class="details-source" data-ru="Источник: Генплан — Civil3D" data-en="Source: Master Plan — Civil3D">Источник: Генплан — Civil3D</p>
+          </div>
+          <button class="details-pdf-link" data-pdf="Phase One/Civil3D PDF siteplan Further comments.pdf" type="button" data-ru="Открыть PDF" data-en="Open PDF">Открыть PDF</button>
+        </header>
+        <div class="details-body">
+          <p data-ru="Вторым важным вопросом является расположение ворот. Здесь необходимо учесть несколько аспектов — тип ворот (раздвижные или распашные), их размеры и местоположение. На данный момент подъездная дорога смоделирована шириной <strong>3,5 м</strong>, чтобы соответствовать противопожарным нормам — это минимально необходимая ширина для проезда пожарной машины." data-en="The second key question is the position of the gates. Several aspects must be considered — gate type (sliding or swing), their dimensions and location. The driveway is currently modelled at <strong>3.5 m</strong> wide to meet fire regulations — the minimum width required for a fire engine to reach your home.">Вторым важным вопросом является расположение ворот. Здесь необходимо учесть несколько аспектов — тип ворот (раздвижные или распашные), их размеры и местоположение. На данный момент подъездная дорога смоделирована шириной <strong>3,5 м</strong>, чтобы соответствовать противопожарным нормам — это минимально необходимая ширина для проезда пожарной машины.</p>
+
+          <div class="details-options">
+            <div class="option-card option-card--a">
+              <span class="option-tag" data-ru="Зона А" data-en="Zone A">Зона А</span>
+              <p data-ru="Для раздвижных ворот 4–5 м требуется такое же свободное пространство сбоку. На участке расположен электрический столб, поэтому ворота пришлось бы размещать после него — но здесь недостаточно места даже для распашных ворот шириной 4 м." data-en="4–5 m sliding gates need an equal clearance to the side. An electrical pole sits on the plot, so gates would have to be placed after it — but there isn't enough room even for 4 m swing gates.">Для раздвижных ворот 4–5 м требуется такое же свободное пространство сбоку. На участке расположен электрический столб, поэтому ворота пришлось бы размещать после него — но здесь недостаточно места даже для распашных ворот шириной 4 м.</p>
+            </div>
+            <div class="option-card option-card--b">
+              <span class="option-tag" data-ru="Зона В" data-en="Zone B">Зона В</span>
+              <p data-ru="Здесь начинается угол забора соседей. В наличии <strong>6,5 м</strong> по ширине и достаточно пространства для раздвижных ворот. Однако необходимо учесть ширину конструкции забора и зону посадки будущих деревьев, чтобы правильно центрировать ворота." data-en="This is where the neighbours' fence angle begins. There is <strong>6.5 m</strong> of width and enough clearance for sliding gates. However, the fence structure width and the future tree-planting zone must be accounted for to centre the gates correctly.">Здесь начинается угол забора соседей. В наличии <strong>6,5 м</strong> по ширине и достаточно пространства для раздвижных ворот. Однако необходимо учесть ширину конструкции забора и зону посадки будущих деревьев, чтобы правильно центрировать ворота.</p>
+            </div>
+          </div>
+
+          <p data-ru="Выбор между Зоной А и Зоной В напрямую влияет на площадь подъездной дороги и, соответственно, на стоимость." data-en="The choice between Zone A and Zone B directly affects the driveway area — and therefore the cost.">Выбор между Зоной А и Зоной В напрямую влияет на площадь подъездной дороги и, соответственно, на стоимость.</p>
+          <div class="details-stats">
+            <div class="stat"><span class="stat-value">~30 м²</span><span class="stat-label" data-ru="Зона А" data-en="Zone A">Зона А</span></div>
+            <div class="stat"><span class="stat-value">~40 м²</span><span class="stat-label" data-ru="Зона В" data-en="Zone B">Зона В</span></div>
+            <div class="stat"><span class="stat-value">3,5 м</span><span class="stat-label" data-ru="Ширина (пожарная норма)" data-en="Width (fire code)">Ширина (пожарная норма)</span></div>
+          </div>
+          <p class="details-note" data-ru="Участок и дом имеют разные геометрические ориентиры, что привело к определённым проектным решениям, которые вы увидите на 3D-визуализациях." data-en="The plot and the house have different geometric references, which led to specific design decisions visible in the 3D visualisations.">Участок и дом имеют разные геометрические ориентиры, что привело к определённым проектным решениям, которые вы увидите на 3D-визуализациях.</p>
+        </div>
+      </article>
+
+      <!-- ── BLOCK 2 · Preliminary Dimensions (Dimensions PDF) ── -->
+      <article class="details-block">
+        <header class="details-head">
+          <span class="details-num">02</span>
+          <div>
+            <h4 class="details-title" data-ru="Предварительные размеры" data-en="Preliminary Dimensions">Предварительные размеры</h4>
+            <p class="details-source" data-ru="Источник: Размеры (PDF 2.0)" data-en="Source: Dimensions (PDF 2.0)">Источник: Размеры (PDF 2.0)</p>
+          </div>
+          <button class="details-pdf-link" data-pdf="Phase One/PDF2.0_Dimensions.pdf" type="button" data-ru="Открыть PDF" data-en="Open PDF">Открыть PDF</button>
+        </header>
+        <div class="details-body">
+          <div class="details-stats details-stats--grid">
+            <div class="stat"><span class="stat-value">~35,85 м</span><span class="stat-label" data-ru="Длина подъездной дороги" data-en="Driveway length">Длина подъездной дороги</span></div>
+            <div class="stat"><span class="stat-value">3,5 м</span><span class="stat-label" data-ru="Ширина мощения" data-en="Paved width">Ширина мощения</span></div>
+            <div class="stat"><span class="stat-value">3,6 м</span><span class="stat-label" data-ru="Ширина с бордюрами" data-en="Width incl. kerbs">Ширина с бордюрами</span></div>
+            <div class="stat"><span class="stat-value">8,5 × 6,5 м</span><span class="stat-label" data-ru="Парковочная зона (глубина × ширина)" data-en="Parking zone (depth × width)">Парковочная зона (глубина × ширина)</span></div>
+            <div class="stat"><span class="stat-value">4,6 × 1,2 м</span><span class="stat-label" data-ru="Доп. дорожка к парковке" data-en="Extra path to parking">Доп. дорожка к парковке</span></div>
+            <div class="stat"><span class="stat-value">1,95 × 1,2 м</span><span class="stat-label" data-ru="Дорожка от главного входа" data-en="Path from main entrance">Дорожка от главного входа</span></div>
+            <div class="stat"><span class="stat-value">~120 м²</span><span class="stat-label" data-ru="Зоны озеленения" data-en="Landscaping zones">Зоны озеленения</span></div>
+            <div class="stat"><span class="stat-value">~350 м²</span><span class="stat-label" data-ru="Газон" data-en="Lawn">Газон</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── BLOCK 3 · Design Choices (Design Choices PDF) ── -->
+      <article class="details-block">
+        <header class="details-head">
+          <span class="details-num">03</span>
+          <div>
+            <h4 class="details-title" data-ru="Обоснование проектных решений" data-en="Design Rationale">Обоснование проектных решений</h4>
+            <p class="details-source" data-ru="Источник: Design Choices (PDF 3.0)" data-en="Source: Design Choices (PDF 3.0)">Источник: Design Choices (PDF 3.0)</p>
+          </div>
+          <button class="details-pdf-link" data-pdf="Phase One/PDF3.0_Design Choices.pdf" type="button" data-ru="Открыть PDF" data-en="Open PDF">Открыть PDF</button>
+        </header>
+        <div class="details-body details-body--chapters">
+          <div class="chapter">
+            <h5 data-ru="Подъездная дорога и расположение" data-en="Driveway &amp; Layout">Подъездная дорога и расположение</h5>
+            <p data-ru="Ширина <strong>3,5 м</strong> — минимальное требование пожарных норм; рекомендуемая минимальная толщина тротуарной плитки — <strong>60 мм</strong>. Дорога расположена примерно в <strong>1 м</strong> от будущего забора, чтобы учесть сам забор и будущие посадки деревьев. Она следует углу и линии участка, обеспечивая прямой путь к парковочной зоне. Зона озеленения также служит важной дренажной зоной для отвода излишков воды с мощёной поверхности; зимой её можно использовать для складирования снега при уборке." data-en="Width <strong>3.5 m</strong> is the minimum fire-code requirement; the recommended minimum paving-slab thickness is <strong>60 mm</strong>. The drive sits roughly <strong>1 m</strong> from the future fence to accommodate the fence itself and future tree planting. It follows the plot's angle and line, providing a direct path to the parking zone. The landscaping zone also serves as a key drainage area for runoff from the paved surface; in winter it can be used to pile snow when clearing the drive.">Ширина <strong>3,5 м</strong> — минимальное требование пожарных норм; рекомендуемая минимальная толщина тротуарной плитки — <strong>60 мм</strong>. Дорога расположена примерно в <strong>1 м</strong> от будущего забора, чтобы учесть сам забор и будущие посадки деревьев. Она следует углу и линии участка, обеспечивая прямой путь к парковочной зоне. Зона озеленения также служит важной дренажной зоной для отвода излишков воды с мощёной поверхности; зимой её можно использовать для складирования снега при уборке.</p>
+          </div>
+
+          <div class="chapter">
+            <h5 data-ru="Водоотведение" data-en="Drainage">Водоотведение</h5>
+            <p data-ru="Ближайший к дому край подъездной дороги имеет уклон <strong>1 см на метр</strong>, чтобы вода стекала от дома в сторону зоны озеленения (перепад ~3,5 см). Поэтому важно установить бордюры." data-en="The driveway edge nearest the house falls at <strong>1 cm per metre</strong> so water runs away from the house toward the landscaping zone (~3.5 cm drop). Installing kerbs is therefore important.">Ближайший к дому край подъездной дороги имеет уклон <strong>1 см на метр</strong>, чтобы вода стекала от дома в сторону зоны озеленения (перепад ~3,5 см). Поэтому важно установить бордюры.</p>
+          </div>
+
+          <div class="chapter">
+            <h5 data-ru="Бордюры" data-en="Kerbs / Edging">Бордюры</h5>
+            <p data-ru="В настоящее время бордюры добавлены только к зоне подъездной дороги, чтобы максимально снизить затраты. Их функции:" data-en="Currently kerbs are added only to the driveway zone, to keep costs down. Their functions:">В настоящее время бордюры добавлены только к зоне подъездной дороги, чтобы максимально снизить затраты. Их функции:</p>
+            <ul class="chapter-list">
+              <li data-ru="Поднять уровень подъездной дороги независимо от окружающих зон;" data-en="Raise the driveway level independently of surrounding zones;">Поднять уровень подъездной дороги независимо от окружающих зон;</li>
+              <li data-ru="Обеспечить устойчивость основания под плиткой, предотвращая смещение или проседание после сезонов дождей и снегопадов;" data-en="Stabilise the paving base, preventing shifting or subsidence after seasons of rain and snow;">Обеспечить устойчивость основания под плиткой, предотвращая смещение или проседание после сезонов дождей и снегопадов;</li>
+              <li data-ru="Блокировать дождевую воду и направлять её в дренажную зону;" data-en="Block rainwater and direct it into the drainage zone;">Блокировать дождевую воду и направлять её в дренажную зону;</li>
+              <li data-ru="Облегчить уборку снега, листьев и мусора;" data-en="Make it easier to clear snow, leaves and debris;">Облегчить уборку снега, листьев и мусора;</li>
+              <li data-ru="Создать барьер между зоной озеленения и газоном, уменьшая распространение сорняков;" data-en="Create a barrier between landscaping and lawn, reducing weed spread;">Создать барьер между зоной озеленения и газоном, уменьшая распространение сорняков;</li>
+              <li data-ru="Обеспечить чёткое разделение зон для лёгкости ухода за садом." data-en="Provide clear separation of zones for easier garden maintenance.">Обеспечить чёткое разделение зон для лёгкости ухода за садом.</li>
+            </ul>
+            <p data-ru="Видимая высота бордюра — <strong>5 см</strong> над уровнем дорожки вокруг дома. Рекомендуются бордюры толщиной 5 см (более толстые камни = выше цена за метр)." data-en="Visible kerb height — <strong>5 cm</strong> above the path level around the house. 5 cm-thick edging is recommended (thicker stone = higher price per metre).">Видимая высота бордюра — <strong>5 см</strong> над уровнем дорожки вокруг дома. Рекомендуются бордюры толщиной 5 см (более толстые камни = выше цена за метр).</p>
+          </div>
+
+          <div class="chapter">
+            <h5 data-ru="Парковочная зона" data-en="Parking Zone">Парковочная зона</h5>
+            <p data-ru="Размеры выбраны для комфортного размещения <strong>двух автомобилей</strong>, с удобством парковки и выезда. Зона позволяет заезжать или выезжать задним ходом для разворота при выезде. Бордюры в начале парковочной зоны установлены под углом ~<strong>40°</strong>, обеспечивая комфортный въезд без повреждения шин (в отличие от резкого угла 90°)." data-en="Dimensions are chosen to comfortably fit <strong>two cars</strong>, with easy parking and exit. The zone allows reversing in or out to turn when leaving. Kerbs at the start of the parking zone are set at ~<strong>40°</strong>, allowing a smooth entry without tyre damage (unlike a sharp 90° angle).">Размеры выбраны для комфортного размещения <strong>двух автомобилей</strong>, с удобством парковки и выезда. Зона позволяет заезжать или выезжать задним ходом для разворота при выезде. Бордюры в начале парковочной зоны установлены под углом ~<strong>40°</strong>, обеспечивая комфортный въезд без повреждения шин (в отличие от резкого угла 90°).</p>
+          </div>
+
+          <div class="chapter">
+            <h5 data-ru="Кортеновская сталь" data-en="Corten Steel">Кортеновская сталь</h5>
+            <p data-ru="Опционально, но рекомендуется использовать бордюр из кортеновской стали или аналогичного материала в местах соединения газона и зон озеленения — для разделения зон и, при необходимости, добавления глубины посадкам. Такой бордюр облегчает уход при стрижке газона, обеспечивая чистые линии и чёткое разделение." data-en="Optional but recommended: a Corten steel (or similar) edging where the lawn meets the landscaping zones — to separate the zones and, if needed, add depth to plantings. It also eases maintenance when mowing, giving clean lines and clear separation.">Опционально, но рекомендуется использовать бордюр из кортеновской стали или аналогичного материала в местах соединения газона и зон озеленения — для разделения зон и, при необходимости, добавления глубины посадкам. Такой бордюр облегчает уход при стрижке газона, обеспечивая чистые линии и чёткое разделение.</p>
+          </div>
+
+          <div class="chapter">
+            <h5 data-ru="Растения" data-en="Planting">Растения</h5>
+            <p data-ru="Для зон озеленения рекомендуются простые низкорослые травы и кустарники, не требующие особого ухода. Одна из рекомендаций — посадить кусты <strong>лаванды</strong> вдоль периметра забора. Лаванда является натуральным репеллентом от насекомых, особенно от комаров. Учитывая наличие у вас рыбного пруда (где, наверняка, много комаров), лаванда станет естественной защитой и избавит от необходимости использовать ядовитые химические спреи." data-en="Simple low-growing grasses and low-maintenance shrubs are recommended for the landscaping zones. One suggestion is to plant <strong>lavender</strong> bushes along the fence perimeter. Lavender is a natural insect repellent, especially against mosquitoes. Given your fish pond (where mosquitoes are surely plentiful), lavender offers natural protection and removes the need for toxic chemical sprays.">Для зон озеленения рекомендуются простые низкорослые травы и кустарники, не требующие особого ухода. Одна из рекомендаций — посадить кусты <strong>лаванды</strong> вдоль периметра забора. Лаванда является натуральным репеллентом от насекомых, особенно от комаров. Учитывая наличие у вас рыбного пруда (где, наверняка, много комаров), лаванда станет естественной защитой и избавит от необходимости использовать ядовитые химические спреи.</p>
+          </div>
+
+          <div class="chapter">
+            <h5 data-ru="Освещение" data-en="Lighting">Освещение</h5>
+            <p data-ru="Садовое освещение важно продумать уже сейчас. Устанавливать светильники немедленно не обязательно, но следует заранее проложить трубы для кабелей под подъездной дорогой, чтобы в будущем избежать земляных работ." data-en="It's important to plan garden lighting now. There's no need to install fixtures immediately, but cable conduits should be laid under the driveway in advance, so that when you decide to add lighting you avoid excavation work.">Садовое освещение важно продумать уже сейчас. Устанавливать светильники немедленно не обязательно, но следует заранее проложить трубы для кабелей под подъездной дорогой, чтобы в будущем избежать земляных работ.</p>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
